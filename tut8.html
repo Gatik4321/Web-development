@@ -1,0 +1,57 @@
+<!-- tutorial for the forms -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is HTML form tutorial</h1>
+    <form action="backened.php">
+        <br>
+        <label for="name">Name</label>
+        <div>
+         <input type="text" name="my Name" id="name">
+        </div>   
+        <br>
+        <div>
+         Role:<input type="text" name="my role">
+        </div>
+        <br>
+        <div>
+        Email:<input type="email" name="myemail">
+        </div>
+        <br>
+        <div>
+        Date:<input type="date" name="my date">  
+        </div>
+        <br>
+        <div>
+        Bonus<input type="number" name="my bonus">
+        </div>
+        <br>
+        <div>
+            <label for="eligibility">Are you eligible?</label>
+         <input type="checkbox" name="myEligibility" id="eligibility">
+        </div>
+        <br>
+        <div>
+           Write about yourself:<br><textarea name="myText"  cols="90" rows="60"></textarea>
+        </div>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="indica" >indica</option> 
+                <option value="alto" selected>swift</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+    </form>
+</body>
+
+</html>
