@@ -1,0 +1,49 @@
+<!-- positins in <htm/</html> -->
+<!-- position absolute relative fixed sticky -->
+<!-- in this tutotrialb we will learn about te different types of te positions -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zpositions in CSS</title>
+    <style>
+        /* positions static(bydefault) static absolute relative fixed and sticky */
+        .container{
+            border:2px solid black;
+            background-color:khaki;  
+            height:4333px;
+        }
+   .box{
+    border:2px solid red;
+    width:150px;
+    height:150px;
+    margin:4px;
+    padding:4px;
+    display:inline-block;
+   }
+   /* agar hum realtive usr karenge to purani poition ke respect mein vo shift ho jaaega aur vahan par gap aa jaega */
+  /* rlative to its nomal position */
+
+  /* absolute position */
+  /* purani position mein gap nhi aaega aur yr parent element ke respect mein shift ho jaaega */
+
+  /* fixed position mein dabba fix ho jaaega vahan par vahan se kahin nhi jaaega */
+
+  /* sticky position ke case mein upar jaakar chipak jaaega */
+   #box3{
+         position: sticky;
+         top:3px;
+   }
+    </style>
+ </head>
+ <body>
+     <div class="container">
+         <div class="box" id="box1">1</div>
+         <div class="box" id="box2">2</div>
+         <div class="box" id="box3">3</div>
+         <div class="box" id="box4">4</div>
+        </div>
+    </body>
+ </html>
