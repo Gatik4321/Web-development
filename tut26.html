@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visiblity and z-index</title>
+</head>
+<style>
+    .div{
+      width:170px;
+      height:170px;
+      border:2px solid black;
+    }
+    #div1{
+        background-color:green;
+        position:relative;
+        top:49px;
+        z-index:50;
+    }
+    /* visibility visible par element dikhega */
+    /* visibility hidden par element nhi dekhaga but vo vahan par prensent hoga */
+    /* display none par element vahan se chla jaaega */
+    /* z index only work on absolutr relative sticky fixed positions */
+    /* z index not work on the static positions */
+    #div2{
+        /* visibility:hidden; */
+        /* display:none;*/
+        visibility:none;
+        top:14px;
+        z-index:34;
+        position:relative;
+        background-color:red;
+    }
+    #div3{
+        background-color:blue;
+    }
+    #div4{
+        background-color:yellow;
+    }
+</style>
+<body>
+    <div class="div" id="div1">1</div>
+    <div class="div" id="div2">2</div>
+    <div class="div" id="div3">3</div>
+    <div class="div" id="div4">4</div>
+</body>
+</html>
