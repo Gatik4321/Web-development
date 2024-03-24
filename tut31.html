@@ -1,0 +1,47 @@
+<!-- this tutorial gave s more information on the css selectors -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More about css selectors</title>
+    <style>
+    h1{
+        background-color:red;
+        color:black;
+        font-weight:bold;
+        text-align:center;
+    }
+    /* jo div p ka andar un sab ar ye properties apply ho jaaengi */
+    div p{
+        color:green;
+        font-weight:bold;
+        background-color:white;
+    }
+    /* jin div ka child p hai un sab par ye properties applicable ho jaaengi */
+    div>p{
+        color:red;
+        background-color:black;
+        font-weight:bold;
+    }
+    /* jahan par div khatam aur agla se p shuru ho */
+    div+p{
+        color:blue;
+    }
+    </style>
+</head>
+<body>
+    <h1>This is more on CSS selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is another paragraph inside li</p></li>
+            </ul>
+            <p>This is another paragraph</p>
+        </div>
+        <p>This is a paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>
