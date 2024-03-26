@@ -1,0 +1,57 @@
+<!-- in this tutorial we will learn about the box and text shadow -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text shadow</title>
+</head>
+<style>
+    .container{
+        display:flex;
+    }
+    .card{
+         padding:23px 12px; 
+        margin:23px 12px;
+        border:2px solid red;
+        background-color:burlywood;
+        box-shadow:10px 10px tomato;
+        /* boxshadow:offset-x offset-y color */
+        box-shadow:-10px -10px tomato;
+        /* agar hm offset x and y par minus lga denge to offset ulti ho jaaegi */
+        box-shadow:10px 10px 10px tomato;
+        /* offset x offset y and blur radius */
+         /* blur radius fla dega sab chijo ko */
+         /* gar bluer radius ke gaga kuch likha gen to vo spread radius
+          */
+          box-shadow:-10px -10px 10px 2px green;
+          box-shadow:-10px -10px 10px 2px rgba(17, 199, 215, 0.4);
+          /* now syntax for the rgba a stands for the alpha used to blur the color */
+          /* now we undertsnad the use of inset */
+          box-shadow:2px 2px red,4px 4px darkblue;
+          box-shadow:inset 3px 5px green;
+
+    }
+    .card h2{
+        text-shadow:2px 2px green;
+        text-shadow:-2px -2px green;
+        text-shadow:2px 2px 13px green;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus delectus perspiciatis corrupti accusamus ipsum ipsam! Ducimus exercitationem, impedit itaque sunt autem odit voluptas sint sed illum inventore debitis temporibus quidem eos at ipsa, neque ex eligendi, esse numquam dolorum beatae!</p></div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates at odit beatae cupiditate, aperiam adipisci eligendi dignissimos incidunt alias repudiandae inventore fugit odio ad corporis aspernatur nihil optio cumque dolorum! Harum, optio incidunt. Alias ipsum velit odit voluptatum? Veritatis, atque.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis esse cupiditate nemo soluta, obcaecati voluptatibus modi alias aut hic quas eos molestiae asperiores mollitia totam placeat, corporis earum ullam dolore. Soluta ratione voluptate nesciunt similique nulla architecto ipsam est consequatur!</p></div>
+    </div>
+</body>
+</html>
