@@ -1,0 +1,41 @@
+<!-- in this tutorial we will study about the variable and coustom properties in Css -->
+<!-- variables define in box are the local variables -->
+<!-- variables define in the :root are the global variables -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables and coustom properties</title>
+    <style>
+        /* this is how we can declare global variables we can use throught the program anywher */
+        :root{
+         --marheight:30px;
+         --tati:violet;
+        }
+        .box{
+            --box-color1:red;
+            width:200px;
+            height:200px;
+            background-color:blue;
+            border:2px solid var(--box-color1);
+            margin:13px 20px;
+            box-shadow:3px 3px var(--tati);
+        }
+        .container{
+            display:flex;
+        }
+        #box1{
+            height:var(--marheight);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+</body>
+</html>
