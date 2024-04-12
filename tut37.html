@@ -1,0 +1,50 @@
+<!-- Transitions in wen designing -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        #box1 {
+            display: flex;
+            height: 200px;
+            width: 300px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+            /* transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out; */
+            
+            /* shotanad property of writing all the transitions functions */
+            transition:  1s ease-in-out .3s;
+        }
+        #box1:hover{
+            background-color:white;
+            width:300px;
+            height:400px;
+            border-radius:30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1">
+            This is my box
+        </div>
+    </div>
+</body>
+
+</html>
