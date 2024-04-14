@@ -1,0 +1,54 @@
+<!-- in this tutorial we will study about the CSS grid -->
+<!-- it is a display seeting like a flex box we can make display grids -->
+<!-- Css grid is a 2dimensional grid quite similiar to the flex box -->
+<!-- but flex box is in 1 dimensional -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and tutorials</title>
+    <style>
+        .container{
+            display:grid;
+            /* grid-template-columns: 300px 100px 100px; */
+             grid-template-columns:300px auto 100px;
+             grid-template-columns:1fr 4fr 1fr;
+             grid-template-columns: repeat(3,auto);
+             grid-gap:2rem;
+        }
+        .item{
+          /* height:100px;
+          width:100px; */
+          border:2px solid black;
+          background-color:red;
+          margin:3px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- jab hmna .container ko grid kia to sara items grid ban gay -->
+    <!-- jo flex box ke andar hain -->
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+    </div>
+</body>
+</html>
