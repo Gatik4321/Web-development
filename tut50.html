@@ -1,0 +1,63 @@
+<!-- in this we will study about the string functions in javascript -->
+<!-- we will study the string function in this video -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String and its function inside the javascript</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+
+        // it is used to itialisthe string
+     var str="This is a string";
+     console.log(str);
+     //it indesOf function is used to find the index of a character
+     var position=str.indexOf("is");
+     console.log(position);
+     //if we have ti find the last index of a poarticular strings
+     position=str.lastIndexOf("is");
+     console.log(position);
+
+     //if we have to find the substring from a string
+    //  var substr=str.slice(1,6);
+    //  console.log(substr);
+     var substr=str.substring(1,7);
+     console.log(substr);
+     
+//    difference between substring ad slice is that
+//slice can also take input in the form of negative index
+//substring cannot take input in the form of negative index
+      var a=str.substr(1,7);
+      console.log(a);
+      
+    var replaced=str.replace('string','gatik');
+    console.log(str);
+    console.log(replaced);
+
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+
+
+    var newString=str.concat(' gatik alagh is a good boy');
+    console.log(newString);
+
+   //trim is used to remove the wide spaces from the start and end of the string
+    var b='     how are    you';
+    console.log(b);
+    console.log(b.trim());
+  //it is used to find the chracter presented at the index 2
+    var char2=str.charAt(2);
+    console.log(char2);
+
+    //slicing of the string
+    console.log(str[2]);
+    </script>
+</body>
+</html>
