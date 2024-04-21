@@ -1,0 +1,41 @@
+<!-- Array and objects in javascript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and Objects in javascript</title>
+</head>
+<body>
+    <div class="container">This is a div</div>
+   <script>
+    let myVar=34;
+    let myVar2="string";
+    let myVar3=true;
+    let myVar4=null;
+    let myVar5=undefined;
+
+    let employee={
+          name:"Gatik",
+          salary:10,
+          channel:"Code with Gatk",
+          "channel 2":"code with gg",
+    }
+    console.log(employee);
+    //  if we want to make an array cnsisting of some elelements
+    let names1=new Array(23);
+    // let names=[1,2,4,"Harry",undefined];
+    let names=new Array(1,2,4,"Handfrry",undefined);
+    console.log(names);
+    console.log(names[1]);
+    let b=names.size;
+    console.log(b);
+    console.log(names.sort());
+    names.push("this is a push");
+    console.log(names);
+
+    //if we want to make an array consisting of some elements
+
+   </script>
+</body>
+</html>
